@@ -46,15 +46,6 @@ export class ContactPage {
     await expect(this.page).toHaveURL(ContactPage.contactPageUrl);
   }
 
-  async fillFormAndSubmit(name, surname, email, phone, message) {
-    await this.nameInput.fill(name);
-    await this.surnameInput.fill(surname);
-    await this.emailInput.fill(email);
-    await this.phoneInput.fill(phone);
-    await this.messageInput.fill(message);
-    await this.clickSubmit();
-  }
-
   async fillContactForm(name, surname, email, phone, message) {
     await this.nameInput.clear();
     await this.nameInput.fill(name);
