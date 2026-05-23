@@ -1,8 +1,24 @@
-
-# Playwright
+# Playwright core artifacts
 node_modules/
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# IDE and Editor settings (highly recommended)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables (just in case you use them for tokens/passwords later)
+.env
+.env.local
